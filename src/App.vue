@@ -2,6 +2,6 @@
 
 <template>
 	<header>
-		test
+		<img src="./assets/images/pinia.jpg" />
 	</header>
 </template>
