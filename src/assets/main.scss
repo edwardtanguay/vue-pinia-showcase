@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+$menu-link-color: yellow;
+
 .router-link-active {
-	color: yellow;
+	color: $menu-link-color;
 }
