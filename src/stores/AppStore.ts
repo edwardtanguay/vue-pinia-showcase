@@ -1,9 +1,9 @@
 import { defineStore } from "pinia";
 import axios from "axios";
-import type { IAppStore } from "@/types";
+import type { AppStore } from "@/types";
 
 export const useAppStore = defineStore("appStore", {
-	state: (): IAppStore => ({
+	state: (): AppStore => ({
 		welcomeMessage: "Welcome to the Vue Pinia Showcase.",
 		skills: [],
 	}),

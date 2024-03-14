@@ -1,11 +1,11 @@
-export type ISkill = {
+export type Skill = {
 	idCode: string;
 	name: string;
 	url: string;
 	description: string;
 };
 
-export type IAppStore = {
+export type AppStore = {
 	welcomeMessage: string;
-	skills: ISkill[];
+	skills: Skill[];
 }
