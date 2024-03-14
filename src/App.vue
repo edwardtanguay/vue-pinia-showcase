@@ -5,6 +5,7 @@ import { useAppStore } from "@/stores/AppStore";
 
 const appStore = useAppStore();
 appStore.fill();
+
 </script>
 
 <template>
