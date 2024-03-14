@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { useAppStore } from "@/stores/AppStore";
 
-
 const appStore = useAppStore();
 </script>
 
@@ -13,7 +12,9 @@ const appStore = useAppStore();
 			src="@/assets/images/pinia.jpg"
 		/>
 		<div v-if="appStore.skills.length === 0">
-			<h2 class="text-xl">Loading skills...</h2>
+			<h2 class="text-xl">
+				<v-icon name="fa-spinner" animation="spin" scale="1.3" /> Loading skills... 
+			</h2>
 		</div>
 		<div v-if="appStore.skills.length !== 0">
 			<h2 class="text-xl">
