@@ -1,7 +1,8 @@
 import { defineStore } from "pinia";
 
-export const useSkillStore = defineStore("skillStore", {
+export const useAppStore = defineStore("appStore", {
 	state: () => ({
+		welcomeMessage: "Welcome to the Vue Pinia Showcase.",
 		skills: [
 			{
 				idCode: "angular",
