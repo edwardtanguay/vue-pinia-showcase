@@ -7,10 +7,16 @@
 	src: url('@/assets/fonts/KodeMono.ttf');
 }
 
+@font-face {
+	font-family: caveat;
+	src: url('@/assets/fonts/Caveat.ttf');
+}
+
 $menu-link-color: yellow;
 
 .router-link-active {
 	color: $menu-link-color;
+	font-weight: bold;
 }
 
 nav {
