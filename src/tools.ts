@@ -7,5 +7,5 @@ export const getRandomNumber = (start: number, end: number): number => {
 };
 
 export const devLog = (text: string): void => {
-	console.log(`DEVLOG: [${text}]`);
-}
+	console.log(`DEVLOG: nnss77766 [${text}]`);
+};

@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { Section } from '@/types';
-import { useAppStore } from "@/stores/AppStore";
+import type { Section } from '../types';
+import { useAppStore } from "../stores/AppStore";
 import { ref } from 'vue';
 
 const appStore = useAppStore();
@@ -18,5 +18,5 @@ const section = ref<Section>("section1")
 	</div>
 	<div v-if="section === 'section1'">Here is section one.</div>
 	<div v-if="section === 'section2'">Here is section two.</div>
-	<div v-if="section === 'section3'">Here is section three.</div>
+	<div v-if="section === 'section3'">Here is section three.</div> 
 </template>

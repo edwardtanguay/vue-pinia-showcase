@@ -53,7 +53,7 @@ const getCleanedValidatedDecoratedSkills = (rawSkills: any[]): Skill[] => {
 			url: rawSkill.url,
 			description: rawSkill.description,
 			rank: tools.getRandomNumber(1, 5),
-			isProcessing: false
+			isProcessing: false,
 		};
 		skills.push(skill);
 	}
@@ -76,8 +76,8 @@ export const getSkillsFromApi = async () => {
 
 export const deleteSkill = async (skill: Skill) => {
 	return new Promise<AppModelResponse>((resolve, reject) => {
-		try {
-			setTimeout(async () => {
+		(async () => {
+			try {
 				const response = await fetch(`${url}/${skill.id}`, {
 					method: "DELETE",
 				});
@@ -87,9 +87,9 @@ export const deleteSkill = async (skill: Skill) => {
 				} else {
 					reject({ status: "error" });
 				}
-			}, 1000);
-		} catch (e) {
-			reject(e);
-		}
+			} catch (e) {
+				reject(e);
+			}
+		})();
 	});
 };

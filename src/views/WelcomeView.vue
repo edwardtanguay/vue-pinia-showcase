@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useAppStore } from "@/stores/AppStore";
+import { useAppStore } from "../stores/AppStore";
 import { ref } from "vue";
 // import { useState } from 'vue-composable-utils';
 
@@ -61,4 +61,3 @@ const desiredRank = 2;
 		</div>
 	</main>
 </template>
-@/stores/AppStore

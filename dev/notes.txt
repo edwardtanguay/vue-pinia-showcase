@@ -2,7 +2,8 @@
 - x decorate method
 - x delete in model
 - x make skills page
-- .. UX for deleting
+- x UX for deleting
+- .. put ux in appStore
 - .. optimistic deleting
 - make local/online versions
 

@@ -12,9 +12,10 @@ export default defineConfig({
 			"@": fileURLToPath(new URL("./src", import.meta.url)),
 		},
 	},
-	// server: {
-	// 	watch: {
-	// 		ignored: ["**/data/**"],
-	// 	},
-	// },
+	server: {
+		watch: {
+			// ignored: ["**/data/**"],
+			usePolling: true
+		},
+	},
 });
