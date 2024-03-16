@@ -14,3 +14,5 @@ export type AppStore = {
 	welcomeMessage: string;
 	skills: Skill[];
 };
+
+export type Section = "section1" | "section2" | "section3"
