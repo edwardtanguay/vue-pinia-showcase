@@ -43,7 +43,6 @@ export const useAppStore = defineStore("appStore", {
 		// 	}
 		// },
 		async deleteSkill(skill: Skill) {
-			tools.devLog('start444')
 			setTimeout(async () => {
 				const response = await AppModel.deleteSkill(skill);
 				if (response.status === "success") {
