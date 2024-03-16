@@ -2,6 +2,7 @@ import { defineStore } from "pinia";
 import type { AppStore, Skill } from "@/types";
 import * as AppModel from "./AppModel";
 import * as tools from "../tools";
+import { toRaw } from "vue";
 
 export const useAppStore = defineStore("appStore", {
 	state: (): AppStore => ({
@@ -12,23 +13,27 @@ export const useAppStore = defineStore("appStore", {
 		getSkillsByRank() {
 			return (rank: number) => this.skills.filter((m) => m.rank === rank);
 		},
+		getRawSkills() {
+			return () => toRaw(this.skills);
+		}
 	},
 	actions: {
 		async fill() {
-			this.skills = await AppModel.getSkillsFromJson();
+			const _skills = this.skills = await AppModel.getSkillsFromJson();
+			this.skills = _skills;
 		},
 		changeWelcomeMessage(newText: string) {
 			this.welcomeMessage = newText;
 		},
 		async deleteSkill(skill: Skill) {
-			const skillToDelete: Skill | undefined = this.skills.find(
+			const skillToDelete: Skill | undefined = this.getRawSkills().find(
 				(m) => m.id === skill.id
 			);
 			if (skillToDelete) {
 				const response = await AppModel.deleteSkill(skill);
 				console.log("skilltoDelete", skillToDelete);
 				if (response.status === "success") {
-					this.skills = this.skills.filter((m) => m.id !== skill.id);
+					this.skills = this.getRawSkills().filter((m) => m.id !== skill.id);
 					tools.devLog(`appstore deleted skill with id ${skill.id}`);
 				} else {
 					tools.devLog(

@@ -1,62 +1,6 @@
 {
   "skills": [
     {
-      "idCode": "piwik",
-      "name": "Piwik",
-      "url": "https://piwik.pro",
-      "description": "a tool to track a customer's behavior across websites and apps",
-      "id": 15
-    },
-    {
-      "idCode": "typescript",
-      "name": "TypeScript",
-      "url": "https://onespace.pages.dev/techItems?id=35",
-      "description": "in larger applications, the preferred way to program in JavaScript",
-      "id": 16
-    },
-    {
-      "idCode": "jest",
-      "name": "Jest",
-      "url": "https://onespace.pages.dev/techItems?id=19",
-      "description": "a JavaScript testing framework like Mocha, but simpler",
-      "id": 17
-    },
-    {
-      "idCode": "git",
-      "name": "Git",
-      "url": "https://onespace.pages.dev/techItems?id=12",
-      "description": "the most-used revision control system today",
-      "id": 18
-    },
-    {
-      "idCode": "nextjs",
-      "name": "Next.js",
-      "url": "https://onespace.pages.dev/techItems?id=219",
-      "description": "a React framework that enables server-side rendering",
-      "id": 19
-    },
-    {
-      "idCode": "nestjs",
-      "name": "NestJS",
-      "url": "https://onespace.pages.dev/techItems?id=217",
-      "description": "a Node.js framework for building efficient, reliable and scalable server-side applications",
-      "id": 20
-    },
-    {
-      "idCode": "responsive",
-      "name": "Responsive web design",
-      "url": "https://en.wikipedia.org/wiki/Responsive_web_design",
-      "description": "an approach to web design that aims to make web pages render well on a variety of devices and window or screen sizes from minimum to maximum display size to ensure usability and satisfaction",
-      "id": 21
-    },
-    {
-      "idCode": "pwa",
-      "name": "PWA",
-      "url": "https://onespace.pages.dev/techItems?id=306",
-      "description": "Progressive Web App - application software delivered through the web",
-      "id": 22
-    },
-    {
       "idCode": "html",
       "name": "HTML",
       "url": "https://onespace.pages.dev/techItems?id=32",
