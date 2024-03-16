@@ -65,13 +65,14 @@ export const deleteSkill = async (skill: Skill) => {
 					method: "DELETE",
 				});
 				if (response.ok) {
-					resolve({ status: "success" }) 
+					tools.devLog(`appmodel deleted skill with id ${skill.id}`);
+					resolve({ status: "success" });
 				} else {
-					reject({ status: "error" }) 
+					reject({ status: "error" });
 				}
 			})();
 		} catch (e) {
-			reject(e)
+			reject(e);
 		}
 	});
 };
