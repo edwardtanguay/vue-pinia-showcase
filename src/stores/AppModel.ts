@@ -1,7 +1,7 @@
 import axios from "axios";
 import { SkillSchema, type Skill, type AppModelResponse } from "../types";
 import * as tools from "../tools";
-import jsonData from "../data/skills.json";
+import jsonData from "../../data/skills.json";
 
 const url = "http://localhost:6124/skills";
 const rawSkills = jsonData.skills;

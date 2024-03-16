@@ -1,27 +1,6 @@
 {
   "skills": [
     {
-      "idCode": "styledcomponents",
-      "name": "styled-components",
-      "url": "https://styled-components.com",
-      "description": "the best bits of ES6 and CSS to style your React app components without stress",
-      "id": 10
-    },
-    {
-      "idCode": "storybook",
-      "name": "Storybook",
-      "url": "https://storybook.js.org/docs/react/get-started/introduction",
-      "description": "a tool for UI development that makes development faster and easier by isolating components",
-      "id": 11
-    },
-    {
-      "idCode": "fusebox",
-      "name": "FuseBox",
-      "url": "https://auth0.com/blog/introducing-fusebox-an-alternative-to-webpack",
-      "description": "module bundler that is simple to configure but has enough features to be a valid alternative to WebPack",
-      "id": 12
-    },
-    {
       "idCode": "hotjar",
       "name": "Hotjar",
       "url": "https://www.hotjar.com/web-app-design",
