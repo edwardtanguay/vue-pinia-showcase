@@ -7,6 +7,7 @@ export const SkillSchema = z.object({
 	url: z.string(),
 	description: z.string(),
 	rank: z.number().min(1).max(5),
+	isProcessing: z.boolean(),
 });
 
 export type Skill = z.infer<typeof SkillSchema>;

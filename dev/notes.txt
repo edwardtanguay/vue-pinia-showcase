@@ -1,8 +1,10 @@
 - x getSkills / getSkillsFromApi
 - x decorate method
 - x delete in model
-- .. make skills page
-- .. predelete
+- x make skills page
+- .. UX for deleting
+- .. optimistic deleting
+- make local/online versions
 
 - change to skills and frontendSkills
 	isOpen

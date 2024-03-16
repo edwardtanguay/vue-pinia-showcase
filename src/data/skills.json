@@ -1,186 +1,11 @@
 {
   "skills": [
     {
-      "idCode": "salesforce",
-      "name": "Salesforce",
-      "url": "https://en.wikipedia.org/wiki/Salesforce",
-      "description": "a cloud-based software company which provides customer relationship management (CRM) software and applications focused on sales, customer service, marketing automation, analytics, and application development",
-      "id": 103
-    },
-    {
-      "idCode": "microsoftdynamics",
-      "name": "Microsoft Dynamics",
-      "url": "https://en.wikipedia.org/wiki/Microsoft_Dynamics_365",
-      "description": "a collection of 12 applications used for enterprise resource planning (ERP) and customer relationship management (CRM) for intelligent business applications, announced by Microsoft in July 2016",
-      "id": 104
-    },
-    {
-      "idCode": "devops",
-      "name": "DevOps",
-      "url": "https://en.wikipedia.org/wiki/DevOps",
-      "description": "set of practices that combines software development and IT operations which aims to shorten the systems development life cycle and provide continuous delivery with high software quality",
-      "id": 106
-    },
-    {
-      "idCode": "cleancode",
-      "name": "clean code",
-      "url": "https://gist.github.com/wojteklu/73c6914cc446146b8b533c0988cf8d29",
-      "description": "a set of coding principles which include: follow conventions, keep it simple, leave code cleaner than when you found it, always find the root cause",
-      "id": 107
-    },
-    {
-      "idCode": "cypress",
-      "name": "Cypress",
-      "url": "https://docs.cypress.io/guides/overview/why-cypress",
-      "description": "a testing tool that automates and scales end-to-end testing",
-      "id": 108
-    },
-    {
-      "idCode": "remix",
-      "name": "Remix",
-      "url": "https://remix.run/docs/en/v1",
-      "description": "a React framework used for server-side rendering (SSR) and unlike Next.js, it enables nested routing with nested layouts",
-      "id": 116
-    },
-    {
-      "idCode": "chakraui",
-      "name": "Chakra UI",
-      "url": "https://chakra-ui.com/getting-started",
-      "description": "a simple, modular and accessible component library that gives you the building blocks you need to build your React applications",
-      "id": 117
-    },
-    {
-      "idCode": "reactnative",
-      "name": "React Native",
-      "url": "https://onespace.pages.dev/techItems?id=1",
-      "description": "a popular JavaScript framework for building mobile apps",
-      "id": 118
-    },
-    {
-      "idCode": "livekit",
-      "name": "LiveKit",
-      "url": "https://docs.livekit.io",
-      "description": "an open source WebRTC project that gives you everything needed to build scalable and real-time audio, video, and data experiences in applications",
-      "id": 119
-    },
-    {
-      "idCode": "socketio",
-      "name": "Socket.IO",
-      "url": "https://onespace.pages.dev/techItems?id=386",
-      "description": "JavaScript library that enables realtime, bi-directional communication between web clients and servers",
-      "id": 120
-    },
-    {
-      "idCode": "terraform",
-      "name": "Terraform",
-      "url": "https://onespace.pages.dev/techItems?id=304",
-      "description": "infrastructure as code tool created by HashiCorp",
-      "id": 121
-    },
-    {
-      "idCode": "nx",
-      "name": "Nx",
-      "url": "https://nx.dev",
-      "description": "a build-system tool to develop multiple full-stack applications that share code between them all in the same workspace",
-      "id": 122
-    },
-    {
-      "idCode": "babel",
-      "name": "Babel",
-      "url": "https://onespace.pages.dev/techItems?id=45",
-      "description": "a JavaScript transpiler which enables you to use higher versions of ECMAScript",
-      "id": 123
-    },
-    {
-      "idCode": "circleci",
-      "name": "CircleCI",
-      "url": "https://circleci.com/docs/about-circleci",
-      "description": "a continuous integration platform that helps ship software faster, using code that's reusable and easy to maintain",
-      "id": 124
-    },
-    {
-      "idCode": "reacttestinglibrary",
-      "name": "React Testing Library",
-      "url": "https://testing-library.com/docs/react-testing-library/intro",
-      "description": "a light-weight solution for testing React components",
-      "id": 125
-    },
-    {
-      "idCode": "testcafe",
-      "name": "TestCafe",
-      "url": "https://testcafe.io/documentation/402635/getting-started",
-      "description": "an end-to-end testing framework for web applications that runs on Node",
-      "id": 126
-    },
-    {
-      "idCode": "supertest",
-      "name": "SuperTest",
-      "url": "https://www.npmjs.com/package/supertest",
-      "description": "provides a high-level abstraction for testing HTTP and APIs",
-      "id": 127
-    },
-    {
-      "idCode": "piral",
-      "name": "Piral",
-      "url": "https://piral.io",
-      "description": "a framework to build portal applications that follow the microfrontends architecture",
-      "id": 128
-    },
-    {
-      "idCode": "hetzner",
-      "name": "Hetzner Cloud",
-      "url": "https://www.hetzner.com/cloud",
-      "description": "a Germany cloud provider which operates data center parks in Germany, Finland and the USA",
-      "id": 129
-    },
-    {
-      "idCode": "influxdb",
-      "name": "InfluxDB",
-      "url": "https://www.influxdata.com/influxdb-pricing",
-      "description": "a time-series database (for time-stampted event data) written in Go and used for storage of e.g. Internet of Things senso data and real-time analytics",
-      "id": 130
-    },
-    {
-      "idCode": "ai",
-      "name": "AI",
-      "url": "https://rollbar.com/blog/6-ways-artificial-intelligence-improves-software-development",
-      "description": "software that is able to learn by itself within a specific context in order to process data to solve tasks that otherwise require human intelligence",
-      "id": 131
-    },
-    {
-      "idCode": "reacthooks",
-      "name": "React Hooks",
-      "url": "https://edwardtanguay.vercel.app/howtos?id=633",
-      "description": "Hooks are a new addition in React 16.8, they let you use state and other React features without writing a class.",
-      "id": 132
-    },
-    {
-      "idCode": "polymer",
-      "name": "Polymer",
-      "url": "https://onespace.pages.dev/techItems?id=88",
-      "description": "a JavaScript framework created and used by Google which embraces the Material Design ideology",
-      "id": 133
-    },
-    {
       "idCode": "stencil",
       "name": "Stencil",
       "url": "https://stenciljs.com/docs/introduction",
       "description": "a compiler that generates web components which use TypeScript, JSX, and CSS",
       "id": 134
-    },
-    {
-      "idCode": "vite",
-      "name": "Vite",
-      "url": "https://vitejs.dev",
-      "description": "a tool to set up development starter applications for frameworks like Vue, React, Svelte and JS/DOM",
-      "id": 135
-    },
-    {
-      "idCode": "abtests",
-      "name": "A/B tests",
-      "url": "https://en.wikipedia.org/wiki/A/B_testing",
-      "description": "the process of comparing two variations of a page element, usually by testing users' response to variant A vs. variant B and concluding which of the two variants is more effective",
-      "id": 136
     },
     {
       "idCode": "gradle",
@@ -190,13 +15,6 @@
       "id": 137
     },
     {
-      "idCode": "d3",
-      "name": "D3.js",
-      "url": "https://d3js.org",
-      "description": "a JavaScript library for manipulating documents based on data",
-      "id": 138
-    },
-    {
       "idCode": "projektronbcs",
       "name": "Projektron BCS",
       "url": "https://en.wikipedia.org/wiki/Projektron_BCS",
@@ -204,25 +22,11 @@
       "id": 139
     },
     {
-      "idCode": "svelte",
-      "name": "Svelte",
-      "url": "https://onespace.pages.dev/techItems?id=210",
-      "description": "JavaScript framework that generates code to manipulate the DOM",
-      "id": 140
-    },
-    {
       "idCode": "tomcat",
       "name": "Tomcat",
       "url": "https://en.wikipedia.org/wiki/Apache_Tomcat",
       "description": "a free and open-source Java web application server",
       "id": 141
-    },
-    {
-      "idCode": "jboss",
-      "name": "JBoss",
-      "url": "https://en.wikipedia.org/wiki/WildFly",
-      "description": "a free and open-source Java application server developed by Red Hat that implements the Java Enterprise Edition specification, today known as WildFly",
-      "id": 142
     },
     {
       "idCode": "mqtt",
@@ -279,13 +83,6 @@
       "url": "https://onespace.pages.dev/techItems?id=324",
       "description": "AWS's container platform (Elastic Kubernetes Service)",
       "id": 150
-    },
-    {
-      "idCode": "pythonqt",
-      "name": "Python/Qt",
-      "url": "https://doc.qt.io/qtforpython",
-      "description": "a Python library that enables developers to use Python to write Qt applications",
-      "id": 151
     },
     {
       "idCode": "hibernate",
