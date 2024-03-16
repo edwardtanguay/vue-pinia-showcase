@@ -1,0 +1,3 @@
+- .. getSkills / getSkillsFromApi
+	- .. decorate method
+- delete in model

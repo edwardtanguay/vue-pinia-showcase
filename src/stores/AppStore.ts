@@ -20,11 +20,11 @@ export const useAppStore = defineStore("appStore", {
 			this.welcomeMessage = newText;
 		},
 		async deleteSkill(skill: Skill) {
-				const url = "http://localhost:6124/skills";
+			const url = "http://localhost:6124/skills";
 			const response = await fetch(`${url}/${skill.id}`, {
-				method: 'DELETE'
-			})
+				method: "DELETE",
+			});
 			console.log(response);
-		}
+		},
 	},
 });
