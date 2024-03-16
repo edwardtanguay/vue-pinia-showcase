@@ -14,7 +14,7 @@ export const useAppStore = defineStore("appStore", {
 	},
 	actions: {
 		async fill() {
-			this.skills = await AppModel.getSkills();
+			this.skills = await AppModel.getSkillsFromJson();
 		},
 		changeWelcomeMessage(newText: string) {
 			this.welcomeMessage = newText;

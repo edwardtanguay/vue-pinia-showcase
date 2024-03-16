@@ -1,11 +1,14 @@
 import axios from "axios";
 import { SkillSchema, type Skill } from "../types";
 import * as tools from "../tools";
-import skills from "../data/skills.json";
+import jsonData from "../data/skills.json";
 
-export const getSkills2 = async () => {
+const rawSkills = jsonData.skills;
+
+export const getSkillsFromJson = async () => {
 	return new Promise<Skill[]>((resolve, reject) => {
 		try {
+			const skills = getCleanedValidatedDecoratedSkills(rawSkills);
 			resolve(skills);
 		} catch (e) {
 			reject(e);
@@ -13,7 +16,7 @@ export const getSkills2 = async () => {
 	});
 };
 
-const getCleanedValidatedDecoratedSkills = (rawSkills: any[]) => {
+const getCleanedValidatedDecoratedSkills = (rawSkills: any[]): Skill[] => {
 	const skills: Skill[] = [];
 	for (const rawSkill of rawSkills) {
 		const skill: Skill = {
@@ -39,7 +42,7 @@ const getCleanedValidatedDecoratedSkills = (rawSkills: any[]) => {
 	return skills;
 };
 
-export const getSkills = async () => {
+export const getSkillsFromApi = async () => {
 	return new Promise<Skill[]>((resolve, reject) => {
 		try {
 			setTimeout(async () => {
