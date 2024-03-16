@@ -1,46 +1,11 @@
 {
   "skills": [
     {
-      "idCode": "openui5",
-      "name": "OpenUI5",
-      "url": "https://en.wikipedia.org/wiki/OpenUI5",
-      "description": "a JavaScript framework and UI library created by SAP, OpenUI5 is the open-source version of SAPUI5",
-      "id": 166
-    },
-    {
-      "idCode": "laravel",
-      "name": "Laravel",
-      "url": "https://onespace.pages.dev/techItems?id=179",
-      "description": "PHP framework released 2013 now most popular PHP framework",
-      "id": 185
-    },
-    {
       "idCode": "vercel",
       "name": "Vercel",
       "url": "https://vercel.com",
       "description": "cloud hosting provider that maintains Next.js and connects to GitHub repositories for seamless deployment",
       "id": 203
-    },
-    {
-      "idCode": "netlify",
-      "name": "Netlify",
-      "url": "https://netlify.com",
-      "description": "cloud hosting provider that owns Gatsby and connects to GitHub repositories for seamless deployment",
-      "id": 204
-    },
-    {
-      "idCode": "digitalocean",
-      "name": "DigitalOcean",
-      "url": "https://digitalocean.com",
-      "description": "an cloud service provider where you can host Linux machines for under $10 per month",
-      "id": 205
-    },
-    {
-      "idCode": "tableau",
-      "name": "Tableau",
-      "url": "https://en.wikipedia.org/wiki/Tableau_Software",
-      "description": "data visualization software created in 2003 acquired by Salesforce in 2019",
-      "id": 206
     },
     {
       "idCode": "artifactory",
@@ -50,25 +15,11 @@
       "id": 210
     },
     {
-      "idCode": "accessibility",
-      "name": "Web accessibility",
-      "url": "https://en.wikipedia.org/wiki/Web_accessibility",
-      "description": "the inclusive practice of ensuring there are no barriers that prevent interaction by people with physical disabilities",
-      "id": 212
-    },
-    {
       "idCode": "elasticsearch",
       "name": "Elasticsearch",
       "url": "https://onespace.pages.dev/techItems?id=170",
       "description": "a search engine and NOSQL database based on the Lucene library",
       "id": 214
-    },
-    {
-      "idCode": "datadog",
-      "name": "Datadog",
-      "url": "https://en.wikipedia.org/wiki/Datadog",
-      "description": "an observability service for cloud-scale applications, providing monitoring of servers, databases, tools, and services",
-      "id": 220
     },
     {
       "idCode": "hadoop",

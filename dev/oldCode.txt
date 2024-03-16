@@ -1,0 +1,45 @@
+
+		// async deleteSkill(skill: Skill) {
+		// 	const skillToDelete: Skill | undefined = this.getRawSkills().find(
+		// 		(m) => m.id === skill.id
+		// 	);
+		// 	if (skillToDelete) {
+		// 		const response = await AppModel.deleteSkill(skill);
+		// 		console.log("skilltoDelete", skillToDelete);
+		// 		if (response.status === "success") {
+		// 			this.skills = this.getRawSkills().filter((m) => m.id !== skill.id);
+		// 			tools.devLog(`appstore deleted skill with id ${skill.id}`);
+		// 		} else {
+		// 			tools.devLog(
+		// 				`appstore error while deleting skill with id ${skill.id}`
+		// 			);
+		// 		}
+		// 	}
+		// },
+
+
+// const getCleanedValidatedDecoratedSkills = (rawSkills: any[]): Skill[] => {
+// 	const skills: Skill[] = [];
+// 	for (const rawSkill of rawSkills) {
+// 		const skill: Skill = {
+// 			id: rawSkill.id,
+// 			idCode: rawSkill.idCode,
+// 			name: rawSkill.name,
+// 			url: rawSkill.url,
+// 			description: rawSkill.description,
+// 			rank: tools.getRandomNumber(0, 10),
+// 		};
+// 		const parseResult = SkillSchema.safeParse(skill);
+// 		if (parseResult.success) {
+// 			skills.push(skill);
+// 		} else {
+// 			if (skill.rank > 5) {
+// 				skill.rank = 5;
+// 				skills.push(skill);
+// 			} else {
+// 				// console.log(`BAD SKILL: ${JSON.stringify(skill)}`);
+// 			}
+// 		}
+// 	}
+// 	return skills;
+// };

@@ -25,23 +25,6 @@ export const useAppStore = defineStore("appStore", {
 		changeWelcomeMessage(newText: string) {
 			this.welcomeMessage = newText;
 		},
-		// async deleteSkill(skill: Skill) {
-		// 	const skillToDelete: Skill | undefined = this.getRawSkills().find(
-		// 		(m) => m.id === skill.id
-		// 	);
-		// 	if (skillToDelete) {
-		// 		const response = await AppModel.deleteSkill(skill);
-		// 		console.log("skilltoDelete", skillToDelete);
-		// 		if (response.status === "success") {
-		// 			this.skills = this.getRawSkills().filter((m) => m.id !== skill.id);
-		// 			tools.devLog(`appstore deleted skill with id ${skill.id}`);
-		// 		} else {
-		// 			tools.devLog(
-		// 				`appstore error while deleting skill with id ${skill.id}`
-		// 			);
-		// 		}
-		// 	}
-		// },
 		async deleteSkill(skill: Skill) {
 			setTimeout(async () => {
 				const response = await AppModel.deleteSkill(skill);

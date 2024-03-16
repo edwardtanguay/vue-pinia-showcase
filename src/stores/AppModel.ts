@@ -1,5 +1,5 @@
 import axios from "axios";
-import { SkillSchema, type Skill, type AppModelResponse } from "../types";
+import { type Skill, type AppModelResponse } from "../types";
 import * as tools from "../tools";
 import jsonData from "../data/skills.json";
 
@@ -16,32 +16,6 @@ export const getSkillsFromJson = async () => {
 		}
 	});
 };
-
-// const getCleanedValidatedDecoratedSkills = (rawSkills: any[]): Skill[] => {
-// 	const skills: Skill[] = [];
-// 	for (const rawSkill of rawSkills) {
-// 		const skill: Skill = {
-// 			id: rawSkill.id,
-// 			idCode: rawSkill.idCode,
-// 			name: rawSkill.name,
-// 			url: rawSkill.url,
-// 			description: rawSkill.description,
-// 			rank: tools.getRandomNumber(0, 10),
-// 		};
-// 		const parseResult = SkillSchema.safeParse(skill);
-// 		if (parseResult.success) {
-// 			skills.push(skill);
-// 		} else {
-// 			if (skill.rank > 5) {
-// 				skill.rank = 5;
-// 				skills.push(skill);
-// 			} else {
-// 				// console.log(`BAD SKILL: ${JSON.stringify(skill)}`);
-// 			}
-// 		}
-// 	}
-// 	return skills;
-// };
 
 const getCleanedValidatedDecoratedSkills = (rawSkills: any[]): Skill[] => {
 	const skills: Skill[] = [];
