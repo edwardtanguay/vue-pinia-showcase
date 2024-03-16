@@ -6,14 +6,12 @@ export const getSkills = async () => {
 	return new Promise<Skill[]>((resolve, reject) => {
 		try {
 			setTimeout(async () => {
-				const rawSkills = (
-					await axios.get(
-						"https://edwardtanguay.vercel.app/share/skills.json"
-					)
-				).data;
+				const url = "http://localhost:6124/skills";
+				const rawSkills = (await axios.get(url)).data;
 				const skills: Skill[] = [];
 				for (const rawSkill of rawSkills) {
 					const skill: Skill = {
+						id: rawSkill.id,
 						idCode: rawSkill.idCode,
 						name: rawSkill.name,
 						url: rawSkill.url,

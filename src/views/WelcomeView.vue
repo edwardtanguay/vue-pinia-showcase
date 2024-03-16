@@ -55,7 +55,7 @@ const desiredRank = 2;
 			</h2>
 			<ul class="list-disc ml-6">
 				<li v-for="skill in appStore.skills" :key="skill.idCode">
-					{{ skill.name }}
+					{{ skill.name }} (id={{ skill.id }})
 				</li>
 			</ul>
 		</div>

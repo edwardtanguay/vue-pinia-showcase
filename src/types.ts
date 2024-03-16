@@ -1,6 +1,7 @@
 import { z } from "zod";
 
 export const SkillSchema = z.object({
+	id: z.number(),
 	idCode: z.string(),
 	name: z.string(),
 	url: z.string(),
