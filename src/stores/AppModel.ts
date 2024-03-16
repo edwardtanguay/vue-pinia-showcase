@@ -1,8 +1,9 @@
 import axios from "axios";
-import { SkillSchema, type Skill } from "../types";
+import { SkillSchema, type Skill, type AppModelResponse } from "../types";
 import * as tools from "../tools";
 import jsonData from "../data/skills.json";
 
+const url = "http://localhost:6124/skills";
 const rawSkills = jsonData.skills;
 
 export const getSkillsFromJson = async () => {
@@ -35,7 +36,7 @@ const getCleanedValidatedDecoratedSkills = (rawSkills: any[]): Skill[] => {
 				skill.rank = 5;
 				skills.push(skill);
 			} else {
-				console.log(`BAD SKILL: ${JSON.stringify(skill)}`);
+				// console.log(`BAD SKILL: ${JSON.stringify(skill)}`);
 			}
 		}
 	}
@@ -46,13 +47,31 @@ export const getSkillsFromApi = async () => {
 	return new Promise<Skill[]>((resolve, reject) => {
 		try {
 			setTimeout(async () => {
-				const url = "http://localhost:6124/skills";
 				const rawSkills = (await axios.get(url)).data;
 				const skills = getCleanedValidatedDecoratedSkills(rawSkills);
 				resolve(skills);
 			}, 3000);
 		} catch (e) {
 			reject(e);
+		}
+	});
+};
+
+export const deleteSkill = async (skill: Skill) => {
+	return new Promise<AppModelResponse>((resolve, reject) => {
+		try {
+			(async () => {
+				const response = await fetch(`${url}/${skill.id}`, {
+					method: "DELETE",
+				});
+				if (response.ok) {
+					resolve({ status: "success" }) 
+				} else {
+					reject({ status: "error" }) 
+				}
+			})();
+		} catch (e) {
+			reject(e)
 		}
 	});
 };

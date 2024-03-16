@@ -1,6 +1,7 @@
 import { defineStore } from "pinia";
 import type { AppStore, Skill } from "@/types";
 import * as AppModel from "./AppModel";
+import * as tools from '../tools';
 
 export const useAppStore = defineStore("appStore", {
 	state: (): AppStore => ({
@@ -20,11 +21,13 @@ export const useAppStore = defineStore("appStore", {
 			this.welcomeMessage = newText;
 		},
 		async deleteSkill(skill: Skill) {
-			const url = "http://localhost:6124/skills";
-			const response = await fetch(`${url}/${skill.id}`, {
-				method: "DELETE",
-			});
-			console.log(response);
+			const response = await AppModel.deleteSkill(skill);
+			if (response.status === "success") {
+				this.skills = this.skills.filter(m => m.id !== skill.id);
+				tools.devLog(`appstore deleted skill with id ${skill.id}`);
+			} else {
+				tools.devLog(`appstore error while deleting skill with id ${skill.id}`);
+			}
 		},
 	},
 });

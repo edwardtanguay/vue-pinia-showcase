@@ -17,3 +17,7 @@ export type AppStore = {
 };
 
 export type Section = "section1" | "section2" | "section3"
+
+export type AppModelResponse = {
+	status: "success" | "error"
+}

@@ -54,7 +54,7 @@ const desiredRank = 2;
 				There are {{ appStore.skills.length }} skills:
 			</h2>
 			<ul class="list-disc ml-6">
-				<li v-for="skill in appStore.skills" :key="skill.idCode" class="mt-2">
+				<li v-for="skill in appStore.skills" :key="skill.id" class="mt-2">
 					{{ skill.name }} (id={{ skill.id }}) <button @click="appStore.deleteSkill(skill)" class="bg-slate-400 px-2 py-1 text-xs rounded hover:opacity-80">delete</button>
 				</li>
 			</ul>
