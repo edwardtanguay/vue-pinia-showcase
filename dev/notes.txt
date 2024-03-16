@@ -1,6 +1,7 @@
 - x getSkills / getSkillsFromApi
 - x decorate method
 - x delete in model
+- .. make skills page
 - .. predelete
 
 - change to skills and frontendSkills
