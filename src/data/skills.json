@@ -1,39 +1,11 @@
 {
   "skills": [
     {
-      "idCode": "html",
-      "name": "HTML",
-      "url": "https://onespace.pages.dev/techItems?id=32",
-      "description": "the markup language that serves as the basis of websites",
-      "id": 23
-    },
-    {
-      "idCode": "css",
-      "name": "CSS",
-      "url": "https://onespace.pages.dev/techItems?id=33",
-      "description": "the language used to style websites and a standard tool for web development",
-      "id": 24
-    },
-    {
-      "idCode": "javascript",
-      "name": "JavaScript",
-      "url": "https://onespace.pages.dev/techItems?id=34",
-      "description": "the main scripting language of the Web",
-      "id": 25
-    },
-    {
       "idCode": "mocha",
       "name": "Mocha",
       "url": "https://onespace.pages.dev/techItems?id=18",
       "description": "one of the most popular JavaScript testing frameworks",
       "id": 26
-    },
-    {
-      "idCode": "vue",
-      "name": "Vue.js",
-      "url": "https://onespace.pages.dev/techItems?id=37",
-      "description": "can easily be used to enhance existing applications as well as to create new applications",
-      "id": 27
     },
     {
       "idCode": "mvc",
@@ -50,32 +22,11 @@
       "id": 29
     },
     {
-      "idCode": "cplusplus",
-      "name": "C++",
-      "url": "https://onespace.pages.dev/techItems?id=57",
-      "description": "low-level language for writing applications",
-      "id": 30
-    },
-    {
-      "idCode": "java",
-      "name": "Java",
-      "url": "https://onespace.pages.dev/techItems?id=44",
-      "description": "a popular and ubiquitous OOP programming language",
-      "id": 31
-    },
-    {
       "idCode": "csharp",
       "name": "C#",
       "url": "https://onespace.pages.dev/techItems?id=91",
       "description": "the standard OOP language on the .NET platform",
       "id": 32
-    },
-    {
-      "idCode": "mvvm",
-      "name": "MVVM",
-      "url": "https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel",
-      "description": "a pattern like MVC but with a View Model, gave rise to JavaScript frameworks",
-      "id": 33
     },
     {
       "idCode": "azure",
