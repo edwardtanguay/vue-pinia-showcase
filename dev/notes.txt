@@ -1,6 +1,7 @@
 - x getSkills / getSkillsFromApi
 - x decorate method
-- .. delete in model
+- x delete in model
+- .. predelete
 
 - change to skills and frontendSkills
 	isOpen

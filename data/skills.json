@@ -1,13 +1,6 @@
 {
   "skills": [
     {
-      "idCode": "hotjar",
-      "name": "Hotjar",
-      "url": "https://www.hotjar.com/web-app-design",
-      "description": "a software tool to track users",
-      "id": 14
-    },
-    {
       "idCode": "piwik",
       "name": "Piwik",
       "url": "https://piwik.pro",
